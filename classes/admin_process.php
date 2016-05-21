@@ -112,8 +112,7 @@ for ($row = 2; $row <= $highestRow; $row++){
 						
 						));
 						
-				session::flash('home','Added successfully!');
-				redirect::to('index.php');
+
 				}catch(Exception $e){
 				die($e->getMessage());
 			}
@@ -121,6 +120,10 @@ for ($row = 2; $row <= $highestRow; $row++){
 	
 	}
 
+				session::flash('home','Added successfully!');
+				redirect::to('index.php');
+	
+	
 }	
 		
 	
