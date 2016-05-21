@@ -1,14 +1,14 @@
 <?php
 require_once 'core/init.php';
 
-if(!input::exists()){
+if(input::exists()){
 				
-						$id_array = array("31","58","25","28");
+						$id_array = input::get('id');
 						$query = "select gcm_id from users where id = ". implode(' or id = ',$id_array) . ";";
 						$db = DB::getInstance();
 						$result = $db->query_assoc($query);
 						$result = $result->results();
-						print_r($result);
+					//	print_r($result);
 						$gcm=new GCM();
 						$messages = input::get('message');
 						
