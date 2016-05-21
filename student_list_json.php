@@ -22,8 +22,3 @@ echo 'error fetching result';
 }
 
 ?>
-
-<form method = "post" action = "">
-<input type="text" name="reg_no" />
-<input type="submit" />
-</form>
