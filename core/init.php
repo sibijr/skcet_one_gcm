@@ -3,10 +3,10 @@ session_start();
 
 $GLOBALS['config'] = array(
 	'mysql' => array(
-		'host' => 'localhost',
-		'username' => 'root',
-		'password' => '',
-		'db' => 'skcet_one'  
+		'host' => 'mysql.hostinger.in',
+		'username' => 'u159824011_sibi',
+		'password' => 'krishna',
+		'db' => 'u159824011_event'  
 		),
 	'remember' => array(
 		'cookie_name' => 'hash',
