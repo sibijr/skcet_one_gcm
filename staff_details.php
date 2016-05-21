@@ -1,6 +1,5 @@
 <?php
 require_once('core/init.php');
-require_once('core/boot.php');
 $admin = new admin();
 if(input::exists()){
 $db = DB::getInstance();
